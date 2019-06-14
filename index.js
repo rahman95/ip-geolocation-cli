@@ -2,7 +2,8 @@
 'use strict';
 
 const meow = require('meow');
-const chalk = require('chalk');
+const fetch  = require('./fetch');
+
 
 const cli = meow(`
 	Usage
@@ -12,16 +13,6 @@ const cli = meow(`
 	  $ ip-geolocation 91.213.103.0
 `);
 
-if (cli.input.length === 0) {
-  console.error(chalk.red('Error: No IP address passed'));
-  return;
-}
+const data = fetch(cli.input);
 
-if (cli.input.length > 1) {
-  console.error(chalk.red('Error: More than IP address passed'));
-  return;
-}
-
-const ipAddress = cli.input;
-
-console.log(ipAddress);
+console.log(data);

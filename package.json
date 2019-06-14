@@ -1,8 +1,14 @@
 {
   "name": "ip-geolocation-cli",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get geolocation data from IP address",
   "main": "index.js",
+  "bin": "index.js",
+  "keywords": [
+		"cli",
+		"ip",
+		"geolocation"
+	],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -16,13 +22,15 @@
     "email": "rahman_95@live.co.uk",
     "url": "https://ryounus.co.uk."
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/rahman95/ip-geolocation-cli/issues"
   },
   "homepage": "https://github.com/rahman95/ip-geolocation-cli#readme",
   "dependencies": {
+    "axios": "^0.19.0",
     "chalk": "^2.4.2",
-    "meow": "^5.0.0"
+    "meow": "^5.0.0",
+    "validate-ip-node": "^1.0.6"
   }
 }
