@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/rahman95/ip-geolocation-cli#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "chalk": "^2.4.2",
     "meow": "^5.0.0",
     "validate-ip-node": "^1.0.6"
